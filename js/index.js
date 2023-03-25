@@ -43,4 +43,21 @@ $('.banner-slide').slick({
   
     mominul.style.display="none";
   
-  
+    $(window).scroll(function(){
+        var minar=$(this).scrollTop();
+        if(minar > 20){
+          $(".back_2-top").fadeIn()
+        }
+        else{
+          $(".back_2-top").fadeOut()
+        }
+      })
+   
+   
+      $(document).ready(function(){
+        $(".back_2-top").click(function(){
+          $("html , body").animate({
+            scrollTop:0,
+          },1000)
+        })
+      })

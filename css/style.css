@@ -524,3 +524,31 @@ body{
 .navbar .navbar-nav .nav-item .nav-link.active{
    border-bottom: 2px solid #FFB800;
 }
+.back_2-top{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    width: 40px;
+    height: 45px;
+    background-color: #F40404;
+    z-index: 9999999;
+    text-align: center;
+    line-height: 40px;
+    transition: ease-in 6s;
+    animation-name: icon;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+ }
+ .back_2-top i{
+    color: #ffffff;
+    
+ }
+ @keyframes icon{
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 1%;
+    }
+ }
+
